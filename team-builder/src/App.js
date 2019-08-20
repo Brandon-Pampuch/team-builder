@@ -8,7 +8,7 @@ function App() {
   const [state , setState] = useState([{name:"brandon",email:"BrandonPampuch@gmail.com"}]);
 
   const addPerson = (newPerson) => {
-    setState(...state, newPerson )
+    setState([...state, newPerson] )
   }
 
   return (
